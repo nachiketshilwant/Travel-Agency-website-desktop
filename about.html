@@ -1,0 +1,183 @@
+<!-- nb -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            display: flex;
+            position: relative;
+        }
+
+        .navbar::before {
+            content: '';
+            height: 100%;
+            width: 100%;
+            background-color: rgb(2, 32, 28);
+            position: absolute;
+            z-index: -1;
+            opacity: 1;
+        }
+
+        .navbar h1 {
+            font-size: 50px;
+            color: white;
+        }
+
+        .navbar ul {
+            display: flex;
+            position: absolute;
+            right: 15rem;
+            top: 12px;
+        }
+
+        .navbar ul li {
+            list-style: none;
+        }
+
+        .navbar ul li a {
+            padding: 19px 25px;
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: wheat;
+        }
+
+        .navbar ul li a:hover {
+            background-color: white;
+            border-radius: 20px;
+            color: black;
+        }
+        .about{
+            margin: 65px 110px;
+        }
+        .heading{
+            font-size: 3rem;
+            padding:20px 20px ;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: auto auto;
+            padding: 20px 160px;
+        }
+        .grid ul li::before{
+            content: "\2713\0020";
+            color: red;
+            font-weight: 200px;
+        }
+        .grid1{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            margin: 10px 75px;    
+        }
+        .flex{
+            display: flex;
+            background-color: red;
+            height:8vh;
+            border: 1px solid;
+            box-shadow: 2px 2px 3px 1px;
+            font-size: 1rem;
+            border-radius: 20px;
+        }
+        .some{
+            color: whitesmoke;
+            display: flex;
+            align-items: center;
+        }
+        .contact{
+            display: flex;
+            align-items: center;
+        }
+        .contact a{
+            text-decoration: none;
+            color: whitesmoke;
+            border: 3px solid whitesmoke;
+            font-size: 2rem;
+            position: absolute;
+            right: 20%;
+            /* margin: 3px auto; */
+            border-radius: 12px;
+        }
+        .contact a:hover{
+            color: black    ;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- nav -->
+    <nav class="navbar">
+        <h1>RNK</h1>
+
+        <ul>
+            <li> <a href="index.html"> Home </a> </li>
+            <li> <a href="about.html"> About </a> </li>
+            <li> <a href="contact.html"> Contact </a> </li>
+        </ul>
+    </nav>
+
+    <section class="about">
+        <div class="heading">About Us</div>
+        <hr style="border: 2px solid red">
+        <div style="padding-top: 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis est magni, sunt aliquid ducimus excepturi
+            dolores tempora cum, unde qui quisquam natus itaque esse eveniet ab sit quos. Totam accusantium sit
+            distinctio fugiat possimus expedita fuga ut earum id nihil iure doloribus officia, architecto quibusdam! lorem35
+        </div>
+
+        <div class="grid">
+            <div>
+                <ul style="list-style: none;">
+                    <li>Lorem ipsum dolor sit.</li>
+                    <li>Lorem ipsum dolor sit.</li>
+                    <li>Lorem ipsum dolor sit.</li>
+                </ul>
+            </div>
+            <div>
+                <ul style="list-style: none;">
+                    <li>Lorem ipsum dolor sit.</li>
+                    <li>Lorem ipsum dolor sit.</li>
+                    <li>Lorem ipsum dolor sit.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="grid1">
+            <div>
+                <h1 style="color: red;">2500</h1>
+                <h3>Travelled</h3>
+            </div>
+            <div>
+                <h1 style="color: red;">500</h1>
+                <h3>Places</3>
+            </div>
+            <div>
+                <h1 style="color: red;">400</h1>
+                <h3>Guide</h3>
+            </div>
+            <div>
+                <h1 style="color: red;">20</h1>
+                <h3>Sports</h3>
+            </div>
+        </div>
+
+        <div class="flex">
+            <div class="some">
+                What are you waiting for, reach us right now
+            </div>
+            <div class="contact">
+               <a href="contact.html">CONTACT US</a>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

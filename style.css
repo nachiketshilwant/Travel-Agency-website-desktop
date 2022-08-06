@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    position: relative;
+}
+
+.navbar::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: rgb(2, 32, 28);
+    position: absolute;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.navbar h1 {
+    font-size: 50px;
+    color: white;
+}
+
+.navbar ul {
+    display: flex;
+    position: absolute;
+    right: 15rem;
+    top: 12px;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar ul li a {
+    padding: 19px 25px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: wheat;
+}
+
+.navbar ul li a:hover {
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+}
+.home{
+    display: flex;
+    color: whitesmoke;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 59vh;
+}
+.home h2,p{
+    margin: 12px 0px;
+}
+.home .btn{
+    color: red;
+    background-color: whitesmoke;
+    border: 1px solid white;
+    padding: 10px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 12px 0px;
+}
+.home::before{
+    content: '';
+    background: url('https://cutt.ly/tvCDnJ8') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.8;
+}
+
+.section1{
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px ;
+    align-items: center;
+}
+.section1 .box{
+    width: 70%;
+    display: flex;
+    padding: 12px 12px;
+    border: 1px solid white;
+    box-shadow: 1px 1px 20px 10px;
+    margin: 25px 0px;
+}
+.section1 .box .btn1{
+    align-items: center;
+    color: red;
+    border: 2px solid red;
+    height: 40px;
+    width: 100px;
+    padding: 8px 28px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.section1 .box .btn1:hover{
+    background-color: red;
+    color: white;
+}
+
+.section2{
+    background-color: darkgray;
+    display: flex;
+    padding: 50px 50px;
+}
+.section2 .box1{
+    background-color: rgb(147, 140, 211);
+    border: 0px solid;
+    height: 290px;
+    width: 500px;
+    text-align: center;
+    color: white;
+    padding: 12px 12px;
+}
+.section3{
+    background-color: darkcyan;
+    height: 100px;
+    text-align: center;
+}
+.section3 .fab{
+    padding: 12px 12px;
+    font-size: 35px;
+    color: white;
+}
+.section3 p{
+    color: white;
+}
